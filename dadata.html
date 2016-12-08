@@ -1,3 +1,4 @@
+
 <form method="post" action="http://request.urih.com/">
 <input id="fullname" name="fullname" type="text" size="100"/>
 <input type="hidden" name="surname" id="surname">
@@ -20,6 +21,11 @@
             $('#surname').val(suggestion.data.surname);
             $('#name').val(suggestion.data.name);
             $('#middlename').val(suggestion.data.patronymic);
+            alert([
+                suggestion.data.surname,
+                suggestion.data.name,
+                suggestion.data.patronymic
+            ]);
             console.log(suggestion);
         }
     });
